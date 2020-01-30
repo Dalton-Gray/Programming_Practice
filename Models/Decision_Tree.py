@@ -9,15 +9,17 @@ values = np.genfromtxt(csv_file, delimiter = ',', dtype ='|U')
 clf = tree.DecisionTreeClassifier()
 
 # data 
-X = (values[1:,3])
+X = (values[1:,0:3])
+#print("X =", values[1:,0:3])
 
 # labels
-Y = (values[0])
+Y = (values[1:,3])
+#print("Y =", values[1:,3])
 
 # train model
 clf = clf.fit(X, Y)
 
 # make prediction
-prediction = clf.predict([[190, 70, 43]])
+prediction = clf.predict([[180, 60, 35]])
 
-print(prediction)
+print("prediction:", prediction)
