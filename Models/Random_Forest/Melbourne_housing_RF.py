@@ -37,7 +37,7 @@ Y = data_frame['Price'].values
 X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size = 0.3, shuffle = True)
 
 # Select model 
-clf = RandomForestClassifier(max_depth = 2, random_state = 0)
+clf = RandomForestClassifier(max_depth = 50 , random_state = 0, n_estimators = 200)
 
 # Train model
 clf.fit(X_train, Y_train)
