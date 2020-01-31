@@ -5,9 +5,6 @@ import numpy as np
 import pandas as pd
 
 # import data 
-#csv_file = 'E:\Work\Programming_Practice\Prep\Data\Melbourne_housing_FULL.csv'
-#values = np.genfromtxt(csv_file, delimiter = ',', dtype ='|U')
-
 data_frame = pd.read_csv('E:\Work\Programming_Practice\Prep\Data\Melbourne_housing_FULL.csv')
 
 # The misspellings of "longitude" and "latitude" are preserved, as the two misspellings were not corrected in the source file.
